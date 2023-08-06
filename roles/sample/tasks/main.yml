@@ -1,0 +1,14 @@
+#URL: vars.google.com
+ #- name: Start Nginx
+ #   ansible.builtin.systemd:
+ #    name: nginx
+ #     state: started
+ #    enabled: yes
+
+- name:  print variable
+  ansible.builtin.debug:
+    msg: URL - {{ URL }}
+
+- name: print variable - task variable defined
+  ansible.builtin.debug:
+      msg: URL - {{ URL }}
