@@ -1,0 +1,13 @@
+- name: variable type
+  hosts: localhost
+  connection: local
+  vars:
+     fruit_name: orange
+     fruit_qty: 100
+     fruit_sale: true
+  tasks:
+    - name: print
+      ansible.builtin.debug:
+        msg: fruit Name - {{ fruit_name }}, Quantity - {{ fruit_qty }}, for sale - {{ fruit_sale }}
+      when: fruit_sale
+
