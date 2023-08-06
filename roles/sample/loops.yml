@@ -23,4 +23,4 @@
         msg: fruit name - "{{ item }}"
       loop:
         - { name: "banana"  qty: 100 }
-        - { name: "kiwi" qty: 200}
+        - { name: "kiwi" qty: 200 }
